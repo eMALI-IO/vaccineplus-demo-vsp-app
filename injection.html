@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>VSP</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom style  -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Popper.js,  Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</head>
+
+<body> <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="wrapper">
+        <!-- Start page content -->
+        <div class="container-fluid animate-bottom-1">
+            <div class="topbar">
+                <a href="#" onclick="history.back()">
+                    <img src="img/icon/Path.svg"><span>Back</span>
+                </a>
+            </div>
+            <div class="row">
+                <div class="page-heading col-12 mt-4">
+                    <p>Vaccine Information</p>
+                </div>
+                <form class="col-12 mt-2">
+                    <div class="form-row">
+                        <div class="form-item col-6">
+                            <input type="text" class="form-textbox" id="vaxName" required>
+                            <span class="form-label" for="vaxName">Vaccine Name</span>
+                        </div>
+                        <div class="form-item col-6">
+                            <input type="text" class="form-textbox" id="manufactory" required>
+                            <span class="form-label" for="manufactory">Manufactory</span>
+                        </div>
+                        <div class="form-item col-6">
+                            <input type="text" class="form-textbox" id="ExpDate" required>
+                            <span class="form-label" for="ExpDate">Expiry Date ( dd/mm/yyyy )</span>
+                        </div>
+                        <div class="form-item col-6">
+                            <select class="form-textbox" id="LocationGiven" required>
+                                <option value="none" selected>Please Select</option>
+                                <option value="leftThigh">Left Thigh</option>
+                                <option value="rightThigh">Right Thigh</option>
+                            </select>
+                            <span class="form-label" for="LocationGiven">Location Given</span>
+                        </div>
+                        <div class="form-item col-6">
+                            <select class="form-textbox" id="RouteAdministration" required>
+                                <option value="none" selected>Please Select</option>
+                                <option value="Intramuscularly">Intramuscularly</option>
+                            </select>
+                            <span class="form-label" for="RouteAdministration">Route of Administration</span>
+                        </div>
+                        <div class="form-item col">
+                            <input type="text" class="form-textbox" id="amount" required>
+                            <span class="form-label" for="amount">Amount</span>
+                        </div>
+                        <div class="form-item col-12">
+                            <textarea type="text" class="form-textbox" id="vaxNotes" rows="4" cols="50" required></textarea>
+                            <span class="form-label" for="vaxNotes">Notes</span>
+                        </div>
+                    </div>
+                    <div class="page-heading col-12 mt-2 pl-0">
+                        <p>Vaccine Lot Number</p>
+                    </div>
+
+                    <div class="col-12 pl-0 pr-0">
+                        <div class="form-row">
+                            <input type="text" id="lotNumber" class="form-control col-10">
+                            <div class="col-2" id="scanLotBtn" onclick="location.href='scanLot.html'">Scan Lot</div>
+                        </div>
+                        
+                      </div>
+                    <div class="btn-wrapper mt-4">
+                        <a href="vaxRecord.html">
+                            <div class="btn">Confirm</div>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+        <!-- end of page content -->
+    </div>
+
+    </div>
+</body>
+
+</html>
